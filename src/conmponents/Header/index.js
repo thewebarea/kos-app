@@ -1,8 +1,8 @@
 /*import Srars from '../../assets/Stars.svg';
 import Trees from '../../assets/Trees.svg';*/
-import s from './style.module.css';
+import h from './style.module.css';
 
-console.log('#####: s',s);
+console.log('#####: h',h);
 const Header = () => {
     return (
         <header className="root">

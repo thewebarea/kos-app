@@ -1,5 +1,5 @@
-import s from './style.module.css';
-console.log('#####: s',s);
+import f from './style.module.css';
+console.log('#####: f',f);
 const Footer = () => {
     return (
         <footer>
