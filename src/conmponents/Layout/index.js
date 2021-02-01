@@ -1,7 +1,8 @@
 import l from './style.module.css';
-console.log('#####: l',l);
 
-const Layout = ({id, title, desc, urlBg, colorBg}) => {
+// const Layout = ({id, title, desc, urlBg, colorBg, ...props}) => {
+const Layout = ({id, title, desc, urlBg, colorBg, children}) => {
+    // console.log('#### props: ', props);
     const backgroundStyle=urlBg
         ? { backgroundImage:`url(${urlBg})`}
         : { background: colorBg };
@@ -10,12 +11,11 @@ const Layout = ({id, title, desc, urlBg, colorBg}) => {
             <div className="wrapper">
                 <article>
                     <div className="title">
-                        <h3>
-                            {title}</h3>
+                        <h3>{title}</h3>
                         <span className="separator"></span>
                     </div>
                     <div className="desc full">
-                        <p>{desc}</p>
+                        {children}
                     </div>
                 </article>
             </div>

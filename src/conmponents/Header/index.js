@@ -2,14 +2,20 @@
 import Trees from '../../assets/Trees.svg';*/
 import h from './style.module.css';
 
-console.log('#####: h',h);
-const Header = () => {
+const Header = ({title, desc}) => {
+    let count = 1;
+    setInterval(() => {
+       count++;
+       console.log('####: count: ', count)
+    }, 10000);
+
+
     return (
         <header className="root">
             <div className="forest"></div>
             <div className="container">
-                <h1>This is title</h1>
-                <p>This is Description!</p>
+                <h1>{title} {count}</h1>
+                <p>{desc}</p>
             </div>
         </header>
     )
