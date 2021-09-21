@@ -1,5 +1,4 @@
 import f from './style.module.css';
-console.log('#####: f',f);
 const Footer = () => {
     return (
         <footer>
